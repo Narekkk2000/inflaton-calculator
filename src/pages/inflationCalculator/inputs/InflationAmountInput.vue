@@ -16,7 +16,7 @@ const { localValue, validationError, onInput, isPresetActive, selectPreset } = u
     <BaseFlex col align="start" gap="4">
       <InputField
           has-prefix
-          label="Amount"
+          label="Գումար"
           type="number"
           inputmode="numeric"
           placeholder="1000000"

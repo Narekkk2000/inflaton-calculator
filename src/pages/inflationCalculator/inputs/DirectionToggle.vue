@@ -15,7 +15,7 @@ const store = useInflationStore()
 
 <template>
     <div class="flex flex-col gap-2">
-      <BaseHeading>Direction</BaseHeading>
+      <BaseHeading>Ուղղություն</BaseHeading>
       <BaseButton
           v-for="opt in INFLATION_DIRECTION_OPTIONS"
           :key="opt.value"

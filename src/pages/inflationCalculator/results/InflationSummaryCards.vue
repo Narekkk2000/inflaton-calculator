@@ -25,30 +25,30 @@ const cards = computed<KpiCard[]>(() => {
 
   return [
     {
-      label: isForward ? 'Adjusted Value' : 'Past Equivalent',
+      label: isForward ? 'Կարգավորված արժեք' : 'Անցյալ համարժեք',
       value: fmt(s.adjustedAmount),
-      sub: isForward ? `in ${store.toYear} money` : `in ${store.fromYear} money`,
+      sub: isForward ? `${store.toYear} թվականի գումարով` : `${store.fromYear} թվականի գումարով`,
       color: COLORS.DEEP,
       icon: '◈',
     },
     {
-      label: 'Purchasing Power Change',
+      label: 'Գնողունակության փոփոխություն',
       value: `${s.purchasingPowerChange >= 0 ? '+' : ''}${fmt(s.purchasingPowerChange)}`,
-      sub: `${s.totalInflationPercent >= 0 ? '+' : ''}${s.totalInflationPercent.toFixed(1)}% total`,
+      sub: `${s.totalInflationPercent >= 0 ? '+' : ''}${s.totalInflationPercent.toFixed(1)}% ընդհանուր`,
       color: s.purchasingPowerChange >= 0 ? COLORS.WARNING : COLORS.SECONDARY,
       icon: '〜',
     },
     {
-      label: 'Cumulative Inflation',
+      label: 'Կուտակային գնաճ',
       value: `${s.totalInflationPercent.toFixed(1)}%`,
-      sub: `over ${s.years} years`,
+      sub: `${s.years} տարվա ընթացքում`,
       color: COLORS.SECONDARY,
       icon: '◌',
     },
     {
-      label: 'Avg. Annual Rate',
+      label: 'Միջին Տարեկան տոկոսադրույք',
       value: `${s.averageAnnualRate.toFixed(2)}%`,
-      sub: 'per year average',
+      sub: 'տարեկան միջինը',
       color: COLORS.MUTED,
       icon: '▷',
     },

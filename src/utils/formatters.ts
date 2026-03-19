@@ -39,8 +39,8 @@ export const formatThousands = (value: string | number): string => {
  * e.g. 1000 → "1K", 1000000 → "1M"
  */
 export const formatPresetLabel = (value: number): string => {
-  if (value >= 1_000_000) return `${value / 1_000_000}M`
-  if (value >= 1_000) return `${value / 1_000}K`
+  if (value >= 1_000_000) return `${value / 1_000_000}Մ`
+  if (value >= 1_000) return `${value / 1_000}Հ`
   return String(value)
 }
 
