@@ -36,7 +36,7 @@ const inflationStats = computed(() => [
 </script>
 
 <template>
-  <SectionCard padding="p-5 sm:p-6 md:p-8" class="w-full max-w-3xl">
+  <SectionCard padding="p-5 sm:p-6 md:p-8" class="w-full h-fit max-w-3xl">
     <div class="flex flex-col gap-6">
 
       <InflationAmountInput />
