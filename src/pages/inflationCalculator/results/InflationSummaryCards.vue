@@ -59,7 +59,7 @@ const cards = computed<KpiCard[]>(() => {
 <template>
   <div class="w-full border border-[#E8EEF6] rounded-sm p-5 flex flex-col gap-4 transition-all duration-200"
     style="background: #F7F8FA;">
-    <div v-for="(card, index) in cards" :key="card.label" class="pb-3 flex justify-between last:border-b-0 last:pb-0"
+    <div v-for="(card, index) in cards" :key="card.label" class="pb-3 flex flex-col sm:flex-row justify-between last:border-b-0 last:pb-0"
       :style="index < cards.length - 1 ? 'border-bottom: 1px solid rgba(255,255,255,0.08)' : ''">
       <BaseFlex gap="2">
         <BaseText tag="span" variant="kpi-icon" :rawColor="card.color">
