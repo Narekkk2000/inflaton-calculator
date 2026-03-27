@@ -34,19 +34,19 @@ const cards = computed<KpiCard[]>(() => {
     {
       label: 'Գնողունակության փոփոխություն',
       value: `${s.purchasingPowerChange >= 0 ? '+' : ''}${fmt(s.purchasingPowerChange)}`,
-      sub: `${s.totalInflationPercent >= 0 ? '+' : ''}${s.totalInflationPercent.toFixed(1)}% ընդհանուր`,
+      sub: `(${s.totalInflationPercent >= 0 ? '+' : ''}${s.totalInflationPercent.toFixed(1)}%)`,
       color: s.purchasingPowerChange >= 0 ? COLORS.WARNING : COLORS.SECONDARY,
       icon: '〜',
     },
     {
-      label: 'Կուտակային գնաճ',
+      label: 'Ընդհանուր գնաճ',
       value: `${s.totalInflationPercent.toFixed(1)}%`,
       sub: `${s.years} տարվա ընթացքում`,
       color: COLORS.SECONDARY,
       icon: '◌',
     },
     {
-      label: 'Միջին Տարեկան տոկոսադրույք',
+      label: 'Գնաճի միջին տարեկան տեմպ',
       value: `${s.averageAnnualRate.toFixed(2)}%`,
       sub: 'տարեկան միջինը',
       color: COLORS.MUTED,

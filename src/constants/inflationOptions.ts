@@ -52,14 +52,14 @@ export const INFLATION_DIRECTION_OPTIONS: {
 }[] = [
     {
         value: 'forward',
-        label: 'Առաջ',
-        description: 'Որքա՞ն է իմ անցյալ գումարի արժեքը այսօր։',
+        label: 'Անցյալի գումարն այսօր',
+        description: 'Որքա՞ն կարժենար անցյալի գումարն այսօր',
         icon: '▶',
     },
     {
         value: 'backward',
-        label: 'Հետընթաց',
-        description: 'Որքա՞ն գումար էր ինձ անհրաժեշտ անցյալում՝ այսօրվա գումարի համար։',
+        label: 'Այսօրվա գումարն անցյալում',
+        description: 'Որքա՞ն է այսօրվա գումարի համարժեքն անցյալում',
         icon: '◀',
     },
 ]

@@ -33,7 +33,7 @@ const { fromYearOptions, toYearOptions, setFromYear, setToYear } = useInflationY
     </BaseFlex>
 
     <BaseFlex col align="start" gap="1" class="flex-1">
-      <BaseText tag="p" variant="hint" color="MUTED">Դեպի</BaseText>
+      <BaseText tag="p" variant="hint" color="MUTED">Մինչ</BaseText>
       <div class="relative w-full">
         <select
           class="w-full rounded-md font-ibm-mono text-sm bg-app-bg text-app-content px-3 py-2 appearance-none pr-8"
